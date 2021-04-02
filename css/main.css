@@ -1,0 +1,278 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: #2f3234;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    flex-flow: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.section {
+    display: flex;
+/*    min-height: 600px;*/
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    background: url(/img/bg/main.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.container{
+    flex-flow: column nowrap;
+    display: flex;
+    height: 100%;
+    width: 1100px;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.header__logo{
+    margin-top: 13px;
+}
+
+.header__nav{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.navigation{
+    display: flex;
+    flex-flow: wrap;
+    font-family: 'ubuntumedium';
+    font-size: 13px;
+    align-items: center;
+}
+
+.navigation__item{
+    position: relative;
+    padding: 0 15px;
+}
+
+.navigation__item::before{
+    content: "";
+    display: flex;
+    width: 4px;
+    height: 4px;
+    background-color: #ffffff;
+    position: absolute;
+    left: -2px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(0,-2px);
+}
+
+.navigation__item:first-child::before{
+    background-color: transparent;
+}
+
+.navigation__link{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.main__content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.main__left{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.main__right{
+    padding-left: 40px;
+    flex-flow: column;
+    display: flex;
+    flex: 1;
+}
+
+.main__top{
+    color: #f9b43b;
+    font-family: 'gagalinregular';
+    font-size: 72px;
+}
+
+.main__botton{
+    color: #ffffff;
+    font-family: 'lifehackmedium';
+    font-size: 65px;
+}
+
+.header__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__btn{
+    color: #ffffff;
+    border: 0px;
+    padding: 13px 17px;
+    text-transform: uppercase;
+    background-color: #e45028;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.best {
+    background: url(/img/bg/best.jpg) 0 0 no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+.best__title, .best__item{
+    display: flex;
+}
+
+.best__item{
+    justify-content: center;
+}
+
+.best__title{
+    justify-content: center;
+    padding-bottom: 40px;
+    font-family: 'gagalinregular';
+    font-size: 72px;
+}
+
+.best__colum{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    margin: 0 15px;
+}
+
+.best__ing{
+    height: 90px;
+    margin-bottom: 25px;
+}
+
+.best__pic{
+    height: 100%;
+}
+
+.best__name{
+    font-family: 'lifehackmedium';
+    font-size: 24px;
+}
+
+.best__text{
+    font-family: 'ubuntulight';
+    color: rgba(47, 50, 52, 0.8);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.reviews{
+    flex-flow: row wrap;
+}
+
+.people{
+    color: #ffffff;
+    display: flex;
+    width: 25%;
+    height: 50vh;
+    position: relative;
+}
+
+.people__img{
+    flex-flow: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale();
+
+}
+
+.people__item{
+    position: absolute;
+    display: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.people:hover .people__item{
+    display: flex; 
+    flex-flow: column; 
+    background: rgba(47, 50, 52, 0.6);
+    height: 100%;
+}
+
+.people__name{
+    font-family: 'gagalinregular';
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.people__text{
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.people__link{
+    border: none;
+    background-color: rgb(47, 50, 52);
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
