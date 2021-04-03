@@ -1,0 +1,60 @@
+
+.reviews{
+    flex-flow: row wrap;
+}
+
+.people{
+    color: #ffffff;
+    display: flex;
+    width: 25%;
+    height: 50vh;
+    position: relative;
+}
+
+.people__img{
+    flex-flow: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+
+}
+
+.people__item{
+    position: absolute;
+    display: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.people:hover .people__item{
+    display: flex; 
+    flex-flow: column; 
+    background: rgba(47, 50, 52, 0.6);
+    height: 100%;
+}
+
+.people__name{
+    font-family: 'gagalinregular';
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.people__text{
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.people__link{
+    border: none;
+    background-color: rgb(47, 50, 52);
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

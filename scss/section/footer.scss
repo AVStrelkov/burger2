@@ -1,0 +1,64 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    background: #2f3234;
+    color: #ffffff;
+    padding: 5px 0;
+    .container{
+        flex-flow: row wrap;
+    }
+}
+
+.footer__left, .footer__right{
+    display: flex;
+    width: 50%;
+}
+
+.footer__left{
+    flex-flow: column;
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer__right{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__phone{
+    display: flex;
+}
+
+.footer__img{
+    margin-right: 6px;
+    width: 12px;
+    height: 24px;
+    background: url(/img/phone.png) center center no-repeat;
+}
+
+.footer__number{
+    font-family: 'ubuntubold';
+    color: #e45028;
+}
+
+.social{
+    display: flex;
+}
+
+.social__link{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+    opacity: .3;
+}
+
+@each $social in (vk, fb, in, tw) {
+    .social__#{$social} {
+        background: url('/img/social/#{$social}.png') center center no-repeat;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

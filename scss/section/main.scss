@@ -1,0 +1,43 @@
+.main {
+    background: url(/img/bg/main.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.main__content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.main__left{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.main__right{
+    padding-left: 40px;
+    flex-flow: column;
+    display: flex;
+    flex: 1;
+}
+
+.main__top{
+    color: #f9b43b;
+    font-family: 'gagalinregular';
+    font-size: 72px;
+}
+
+.main__botton{
+    color: #ffffff;
+    font-family: 'lifehackmedium';
+    font-size: 65px;
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
