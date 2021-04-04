@@ -200,7 +200,7 @@
                 <div class="container">
                     <h1 class="order__title">закажите доставку</h1>
                     <form action="" class="form">
-                        <div class="form__colum">
+                        <div class="form__left">
                             <div class="form__row">
                                 <div class="form__name">
                                     <label for="name" class="form__label">Имя</label>
@@ -212,50 +212,52 @@
                                 </div>
                             </div>
                             <div class="form__row">
-                                <label for="street" class="form__street">Улица</label>
-                                <input type="text" id="street" name="street" class="street">
+                                <div class="form__street">
+                                    <label for="street" class="form__street">Улица</label>
+                                    <input type="text" id="street" name="street" class="street">
+                                </div>                                
                             </div>
                             <div class="form__row">
-                                <div class="form__colum">
+                                <div class="form__building">
                                     <label for="home" class="form__hame">Дом</label>
                                     <input type="text" id="home" name="home" class="home">
                                 </div>
-                                <div class="form__colum">
+                                <div class="form__building">
                                     <label for="housing" class="form__housing">Корпус</label>
                                     <input type="text" id="housing" name="housing" class="housing">
                                 </div>
-                                <div class="form__colum">
+                                <div class="form__building">
                                     <label for="flat" class="form__flat">Квартира</label>
                                     <input type="text" id="flat" name="flat" class="flat">
                                 </div>
-                                <div class="form__colum">
+                                <div class="form__building">
                                     <label for="level" class="form__level">Этаж</label>
                                     <input type="text" id="level" name="level" class="level">
                                 </div>
                             </div>
                         </div>
-                        <div class="form__colum">
-                            <div class="form__row">
+                        <div class="form__right">
+                            <div class="form__row colum">
                                 <label for="comment" class="form__comment">Комментарий</label>
-                                <textarea name="comment" id="comment"></textarea>
+                                <textarea name="comment" id="comment" class="form__texarea"></textarea>
                             </div>
-                            <div class="form__row">
-                                <div class="form__row">
+                            <div class="form__row left">
+                                <div class="form__money">
                                     <input type="radio" name="pay" id="money" class="money">
                                     <label for="money" class="form__pay">Потребуется сдача</label>
                                 </div>
-                                <div class="form__row">
+                                <div class="form__card">
                                     <input type="radio" name="pay" id="card" class="card">
                                     <label for="card" class="form__pay">Оплпьп по карте</label>
                                 </div>
                             </div>
-                            <div class="form__row">
+                            <div class="form__row left">
                                 <input type="checkbox" name="call" id="call" class="call">
                                 <label for="call" class="form__call">Не перезванивать</label>
                             </div>
-                            <div class="form__row">
-                                <input type="submit" value="заказать" class="btn-order">
-                                <input type="button" value="Очистить" class="btn-cleer">
+                            <div class="form__row left">
+                                <input type="submit" value="заказать" class="form__btn btn-order">
+                                <input type="reset" value="Очистить" class="form__btn btn-cleer">
                             </div>
                         </div>
                     </form>
